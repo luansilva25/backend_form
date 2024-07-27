@@ -107,7 +107,7 @@ DATABASES = {
 
 DATABASES = {
     'default': {
-        'ENGINE': "django.db.backends.postgres",
+        'ENGINE': "django.db.backends.postgresql_psycopg2",
         'HOST': "aws-0-us-west-1.pooler.supabase.com",
         'NAME': "postgres",
         'PORT': "6543",
