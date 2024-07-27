@@ -13,7 +13,7 @@ class Forms(models.Model):
     city = models.CharField(max_length=100)
     address = models.CharField(max_length=255)
     hobbies = models.ManyToManyField(Hobbies)
-    states = models.ManyToManyField(States)
+    states = models.ForeignKey(States, on_delete=models.CASCADE, default=None, null=True, blank=True)
     programming = models.ManyToManyField(ProgLang)
 
     def __str__(self):

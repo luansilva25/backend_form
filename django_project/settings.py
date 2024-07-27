@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS =  os.environ.get('ALLOWED_HOSTS').split(" ")
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -61,7 +61,8 @@ ROOT_URLCONF = 'django_project.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://render.com"
+    "https://render.com",
+    'https://formulario-devweb-two.vercel.app'
 ]
 
 TEMPLATES = [
@@ -82,7 +83,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://render.com"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://render.com", 'https://formulario-devweb-two.vercel.app']
 
 CORS_ALLOWED_ALL_ORIGINS = True
 
@@ -109,15 +110,13 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': "django.db.backends.postgresql_psycopg2",
-        'HOST': "aws-0-us-west-1.pooler.supabase.com",
+        'HOST': "aws-0-sa-east-1.pooler.supabase.com",
         'NAME': "postgres",
         'PORT': "6543",
-        "USER": "postgres.kcyqbireukmhbcthhhdw",
-        "PASSWORD": "luan250807@#"
+        "USER": "postgres.xntymclzfywjfvmpzpnm",
+        "PASSWORD": "luanmonteiro2508"
     }
 }
-
-
 
 
 # Password validation
