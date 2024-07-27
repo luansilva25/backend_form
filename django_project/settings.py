@@ -61,7 +61,7 @@ ROOT_URLCONF = 'django_project.urls'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://render.com/"
+    "https://render.com"
 ]
 
 TEMPLATES = [
@@ -82,7 +82,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://render.com/"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://render.com"]
 
 CORS_ALLOWED_ALL_ORIGINS = True
 
